@@ -3,6 +3,22 @@
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.margin-top48 {
+    margin-top: 48px;
+}
+
+//COLOURS
+
+.purple {
+    color: #9647FE;
+}
+
+//BUTTONS
+
 .btn-primary {
     width: 165px;
     height: 58px;
@@ -26,9 +42,7 @@
     }
 }
 
-.margin-top48 {
-    margin-top: 48px;
-}
+//FONTS
 
 /* poppins-300 - latin */
 @font-face {

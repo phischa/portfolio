@@ -9,12 +9,14 @@ section {
     align-items: center;
     flex-direction: column;
     background-size: cover;
+    overflow-x: clip;
 }
 
 .titel-box {
     display: flex;
     flex-direction: row;
     gap: 12px;
+    z-index: 2;
 }
 
 .title-rotate {
@@ -49,7 +51,28 @@ h1 {
 h2 {
     font-size: 64px;
     font-weight: 400;
-    /* color: #9647FE; */
-    color: #9447FB;
+    color: #9647FE;
+    /* color: #9447FB; */
     line-height: 76.8px;
+}
+
+.shade1 {
+    position: absolute;
+    width: 572.03px;
+    height: 608px;
+    top: 99px;
+    left: -149.23px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.shade2 {
+    position: absolute;
+    width: 679.58px;
+    height: 573.58px;
+    top: 300.9px;
+    right: -149.23px;
+    gap: 0px;
+    opacity: 0px;
+    rotate: -28deg;
 }
