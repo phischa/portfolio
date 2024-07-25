@@ -76,3 +76,52 @@ h2 {
     opacity: 0px;
     rotate: -28deg;
 }
+
+.link-section {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+
+    hr {
+        display: block;
+        width: 100px;
+        border: 0;
+        border-top: 4px solid #70E61C;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    gap: 3px;
+    rotate: 90deg;
+
+    span {
+        display: flex;
+        
+        font-size: 23px;
+        line-height: 27.6px;
+        font-weight: 400;
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+        rotate: -90deg;
+    }
+}
