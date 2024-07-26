@@ -1,0 +1,49 @@
+section {
+    background-color: #151D2E;
+    background-position: 50% 50%;
+    color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 64px 0 64px 0;
+    border-top: 1px solid #70E61C;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: left;
+
+    }
+}
+
+.link-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+
+    img {
+        cursor: pointer;
+    }
+}

@@ -6,13 +6,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 1px solid #70E61C; */
     box-shadow: 1px 1px rgba(0, 0, 0, 0.6);
     padding: 37px 100px 37px 100px;
     z-index: 100;
     background-color: #151D2E;
 
-    .main-name {
+    .logo {
         display: flex;
         flex-direction: row;
         color: white;
