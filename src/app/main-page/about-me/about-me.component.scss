@@ -4,9 +4,6 @@ section {
     background-color: #151D2E;
     background-position: 50% 50%;
     color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
     background-size: cover;
 }
 
@@ -38,4 +35,10 @@ section {
 
 .about-me-img {
     padding: 64px 120px 64px 120px;
+}
+
+.bg-blending {
+    width: 100%;
+    height: auto;
+    margin-top: -600px;
 }
