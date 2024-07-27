@@ -41,6 +41,10 @@ section {
         }
     }
 
+    .margin64 {
+        margin-bottom: 64px;
+    }
+
     h1 {
         font-size: 90px;
         font-weight: 700;
@@ -49,6 +53,7 @@ section {
     }
 
     p {
+        object-fit: contain;
         padding: 64px 120px 64px 0px;
         font-size: 16px;
         font-weight: 400;

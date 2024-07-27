@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
+  @ViewChild('aboutMe') aboutMeRef!: ElementRef;
 
+  scrollToAboutMe() {
+    this.aboutMeRef.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
 }

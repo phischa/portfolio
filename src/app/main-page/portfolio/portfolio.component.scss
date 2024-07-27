@@ -5,4 +5,19 @@ section {
     background-position: 50% 50%;
     color: white;
     background-size: cover;
+
+    h1 {
+        padding: 64px 120px 64px 120px;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: center;
+    }
 }
