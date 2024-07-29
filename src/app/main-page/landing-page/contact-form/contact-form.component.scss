@@ -119,3 +119,10 @@ textarea {
 .error-border {
     border: 1px solid red !important;
 }
+
+.btn-primary:disabled,
+.btn-disabled {
+    background-color: lightgray;
+    color: darkgray; /* Adjust text color if needed */
+    cursor: not-allowed;
+}
