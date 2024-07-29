@@ -40,5 +40,11 @@ section {
 .bg-blending {
     width: 150%;
     height: auto;
-    margin-top: -600px;
+    margin-top: -900px;
+}
+
+@media (max-width: 1250px) {
+    .bg-blending {
+        margin-top: -600px;
+    }
 }
