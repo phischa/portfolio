@@ -24,6 +24,14 @@ section {
     }
 }
 
+.imprint {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .copyright {
     display: flex;
     align-items: center;

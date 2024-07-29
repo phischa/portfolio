@@ -5,35 +5,43 @@
         <hr />
     </div>
 
-
     <div class="contact-section">
-        <div class="container">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="contact-paragraph">
+            <h2>Looking for a <span class="purple">frontend developer</span>?</h2>
+            <p>Feel free to contact me. <br> I'm looking forward to hear from you.</p>
+        </div>
 
-                <label for="name">Name </label>
-                @if(!name.valid && name.touched && !name.disabled) {
-                <span class="warn-message">Bitte fügen Sie ihren Namen hinzu.</span>
-                }
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                    placeholder="Ihr Name" required>
 
-                <label for="email">E-Mail </label>
-                @if(!email.valid && email.touched && !email.disabled) {
-                <span class="warn-message">Bitte fügen Sie ihre E-mail hinzu.</span><br>
-                }
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="Ihre E-Mail" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+        <div class="contact-form">
+            <div class="container">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-                <label for="message">Nachricht </label>
-                @if(!message.valid && message.touched) {
-                <span class="warn-message">Bitte schreiben Sie eine Nachricht.</span><br>
-                }
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
-                    placeholder="Ihre Nachricht" style="height:200px" required></textarea>
-                <br>
-                <input type="submit" value="Submit">
+                    <label for="name">Name </label>
+                    @if(!name.valid && name.touched && !name.disabled) {
+                    <span class="warn-message">Please enter your name.</span>
+                    }
+                    <input class="bg-color" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name"
+                        name="name" placeholder="Your name" required>
 
-            </form>
+                    <label for="email">Email </label>
+                    @if(!email.valid && email.touched && !email.disabled) {
+                    <span class="warn-message">Please enter your email address.</span><br>
+                    }
+                    <input class="bg-color" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"
+                        name="email" placeholder="Your email" required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+
+                    <label for="message">Message </label>
+                    @if(!message.valid && message.touched) {
+                    <span class="warn-message">Please write a message.</span><br>
+                    }
+                    <textarea class="bg-color" #message="ngModel" [(ngModel)]="contactData.message" id="message"
+                        name="message" placeholder="Your Message" style="height:200px" required></textarea>
+                    <br>
+                    <input class="btn-primary" type="submit" value="Submit">
+
+                </form>
+            </div>
         </div>
     </div>
 </section>

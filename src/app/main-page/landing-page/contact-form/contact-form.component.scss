@@ -24,7 +24,6 @@ section {
     padding-bottom: 64px;
 }
 
-
 h1 {
     font-size: 90px;
     font-weight: 700;
@@ -58,47 +57,58 @@ hr {
     box-sizing: content-box;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+.contact-section {
+    display: flex;
+}
+
+.contact-paragraph {
+    padding: 64px 0px 64px 120px;
+    
+    h2 {
+        padding-bottom: 16px;
+    }
+}
+
 input[type=text],[type=email],
 select,
 textarea {
     font-family: Helvetica, Arial, sans-serif;
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
+    border: 1px solid #9647FE; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #04AA6D;
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+
+    &:hover {
+        border: 1px solid #1FDAE7; /* Gray border */
+    }
+
+    &:focus {
+        border: 1px solid #60c518;
+        outline: none;
+    }
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.contact-section {
+.contact-form {
     display: flex;
-    justify-content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               : flex-end;
+    padding-bottom: 32px;
+    width: 100%;
+    justify-content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            : flex-end;
 }
 
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    padding: 20px 120px 20px 20px;
     width: 50%;
+}
+
+.bg-color {
+    background-color: #151D2E;
 }
 
 .warn-message {
