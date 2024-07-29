@@ -41,6 +41,13 @@
                         name="message" placeholder="Your Message" style="height:200px" required
                         [ngClass]="{'error-border': !message.valid && message.touched}"></textarea>
                     <br>
+                    <label for="checkbox" class="check">
+                        <input type="checkbox" id="checkbox" [(ngModel)]="contactData.checkbox" name="checkbox" required>
+                        <span class="checkmark"></span>
+                        <p>I've read the <a href="#"><span class="purple">privacy policy</span></a> and agree to the processing of my data as outlined.</p>
+                    </label>
+                    <br>
+                    <br>
                     <input class="btn-primary" type="submit" value="Submit" [disabled]="!contactForm.valid"
                         [ngClass]="{'btn-disabled': !contactForm.valid}">
 

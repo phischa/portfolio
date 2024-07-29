@@ -19,6 +19,7 @@ export class ContactFormComponent {
     name: "",
     email: "",
     message: "",
+    checkbox: false
   }
 
   mailTest = true;
