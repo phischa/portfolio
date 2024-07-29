@@ -1,0 +1,39 @@
+<section id="contact" class="scroll-offset">
+    <div class="headline">
+        <hr class="hr-invisible" />
+        <h1>Contact</h1>
+        <hr />
+    </div>
+
+
+    <div class="contact-section">
+        <div class="container">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+                <label for="name">Name </label>
+                @if(!name.valid && name.touched && !name.disabled) {
+                <span class="warn-message">Bitte fügen Sie ihren Namen hinzu.</span>
+                }
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                    placeholder="Ihr Name" required>
+
+                <label for="email">E-Mail </label>
+                @if(!email.valid && email.touched && !email.disabled) {
+                <span class="warn-message">Bitte fügen Sie ihre E-mail hinzu.</span><br>
+                }
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                    placeholder="Ihre E-Mail" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+
+                <label for="message">Nachricht </label>
+                @if(!message.valid && message.touched) {
+                <span class="warn-message">Bitte schreiben Sie eine Nachricht.</span><br>
+                }
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
+                    placeholder="Ihre Nachricht" style="height:200px" required></textarea>
+                <br>
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+</section>

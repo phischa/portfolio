@@ -4,13 +4,14 @@ section {
     color: white;
     background-size: cover;
     box-sizing: border-box;
+    padding: 64px 120px 64px 120px;
 
     h1 {
-        padding: 64px 120px 64px 120px;
         font-size: 90px;
         font-weight: 700;
         line-height: 108px;
         text-align: center;
+        padding-bottom: 64px;
     }
 
     p {
