@@ -21,7 +21,8 @@
                     <span class="warn-message">Please enter your name.</span>
                     }
                     <input class="bg-color" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name"
-                        name="name" placeholder="Your name" required>
+                        name="name" placeholder="Your name" required
+                        [ngClass]="{'error-border': !name.valid && name.touched && !name.disabled}">
 
                     <label for="email">Email </label>
                     @if(!email.valid && email.touched && !email.disabled) {
@@ -29,14 +30,16 @@
                     }
                     <input class="bg-color" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"
                         name="email" placeholder="Your email" required
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                        [ngClass]="{'error-border': !email.valid && email.touched && !email.disabled}">
 
                     <label for="message">Message </label>
                     @if(!message.valid && message.touched) {
                     <span class="warn-message">Please write a message.</span><br>
                     }
                     <textarea class="bg-color" #message="ngModel" [(ngModel)]="contactData.message" id="message"
-                        name="message" placeholder="Your Message" style="height:200px" required></textarea>
+                        name="message" placeholder="Your Message" style="height:200px" required
+                        [ngClass]="{'error-border': !message.valid && message.touched}"></textarea>
                     <br>
                     <input class="btn-primary" type="submit" value="Submit">
 
