@@ -101,10 +101,27 @@ h2 {
         padding: 0;
     }
 
-    img {
+    .icon-animation {
         cursor: pointer;
+        transition: transform 250ms;
     }
 }
+
+.icon-animation:hover {
+    transform: translateY(-10px);
+}
+
+/* @keyframes small-to-bigger {
+    from {
+        width: 30px;
+        height: 30px;
+    }
+
+    to {
+        width: 40px;
+        height: 40px;
+    }
+} */
 
 .scroll {
     display: flex;

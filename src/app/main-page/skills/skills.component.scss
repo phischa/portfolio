@@ -81,11 +81,35 @@ section {
 
 .skill-item img {
     max-width: 100px;
-    padding: 16px 64px;
+    padding: 16px 64px 0 64px;
+    transition: transform 250ms;
+}
+
+.skill-item img:hover {
+    animation: moveUp 250ms ease-in-out forwards, moveDown 250ms ease-in-out forwards 500ms;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .skill-item p {
     margin-top: 16px;
+    margin-bottom: 16px;
     font-size: 16px; /* Adjust as needed */
 }
 
