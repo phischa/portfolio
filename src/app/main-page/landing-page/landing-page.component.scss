@@ -101,35 +101,33 @@ h2 {
         padding: 0;
     }
 
-    .icon-animation {
+    img {
         cursor: pointer;
         transition: transform 250ms;
+        transform: scale(1);
+    }
+
+    img:hover {
+        transform: scale(1.25);
+        /* Adjust the scale factor as needed */
+    }
+
+    img:hover~img {
+        transform: scale(1);
+    }
+
+    img:hover~img:hover {
+        transform: scale(1);
     }
 }
-
-.icon-animation:hover {
-    transform: translateY(-10px);
-}
-
-/* @keyframes small-to-bigger {
-    from {
-        width: 30px;
-        height: 30px;
-    }
-
-    to {
-        width: 40px;
-        height: 40px;
-    }
-} */
 
 .scroll {
     display: flex;
     align-items: center;
     position: absolute;
     right: 0;
-    bottom: 100px;
-    gap: 3px;
+    bottom: 130px;
+    gap: 8px;
     rotate: 90deg;
 
     span {
@@ -143,5 +141,15 @@ h2 {
         width: 24px;
         height: 24px;
         rotate: -90deg;
+        transition: transform 250ms;
+        transform: scale(1);
+    }
+
+    &:hover img {
+        transform: scale(1.15) translateY(10px);
+    }
+
+    &:hover img:hover~img {
+        transform: scale(1);
     }
 }
