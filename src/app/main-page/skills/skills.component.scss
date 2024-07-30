@@ -55,7 +55,7 @@ section {
 
     .paragraph {
         object-fit: contain;
-        padding: 64px 120px 64px 0px;
+        padding: 64px 120px 24px 0px;
         font-size: 16px;
         font-weight: 400;
         line-height: 19.2px;
@@ -63,11 +63,20 @@ section {
     }
 }
 
+.btn-bigger {
+    transition: transform 250ms;
+    transform: scale(1) translate(0, 0);
+}
+
+.btn-bigger:hover {
+    transform: scale(1.1) translate(5px, 5px);
+}
+
 .skills-img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 64px 120px;
+    padding: 64px 64px;
     box-sizing: border-box;
 }
 

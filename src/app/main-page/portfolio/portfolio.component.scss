@@ -4,20 +4,141 @@ section {
     color: white;
     background-size: cover;
     box-sizing: border-box;
-    padding: 64px 120px 64px 120px;
+    padding: 64px 0 0 120px;
+}
+
+.headline {
+    position: relative;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
 
     h1 {
         font-size: 90px;
         font-weight: 700;
         line-height: 108px;
         text-align: center;
-        padding-bottom: 64px;
+    }
+}
+
+hr {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    border: 0;
+    border-top: 4px solid #1FDAE7;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin: 1em 0;
+    box-sizing: content-box;
+}
+
+.hr-invisible {
+    z-index: -10000;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    border: 0;
+    right: 0;
+    border-top: 4px solid #1FDAE7;
+    margin: 1em 0;
+    box-sizing: content-box;
+}
+
+.hr-short {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* .hr-short {
+    width: 280px;
+    border: 0;
+    border-top: 4px solid #1FDAE7;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin: 1em 0;
+    box-sizing: content-box;
+} */
+
+.subline {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+
+.project-left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.4px;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: left;
+        margin-bottom: 8px;
     }
 
     p {
         font-size: 16px;
         font-weight: 400;
         line-height: 19.2px;
-        text-align: center;
+        text-align: left;
     }
+}
+
+.project-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.4px;
+        text-align: right;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: right;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: right;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-ref {
+    text-decoration: none;
+}
+
+.margin-10 {
+    margin-top: -100px
 }
