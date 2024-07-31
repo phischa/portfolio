@@ -17,6 +17,7 @@ section {
     flex-direction: row;
     gap: 12px;
     z-index: 2;
+    padding: 0 16px 0 16px;
 }
 
 .title-rotate {
@@ -54,7 +55,7 @@ h2 {
     color: #9647FE;
     /* color: #9447FB; */
     line-height: 76.8px;
-    text-shadow: 1px 1px;
+    text-shadow: 1px 1px black; 
 }
 
 .btn-ref {

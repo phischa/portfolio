@@ -80,6 +80,13 @@ hr {
     padding-right: 120px;
     padding-left: 64px;
 
+    img {
+        position: relative;
+        z-index: 1;
+        width: 601px;
+        height: 560px;
+    }
+
     .text-left {
         h1 {
             font-size: 32px;
@@ -115,6 +122,11 @@ hr {
     align-items: center;
     padding-left: 120px;
     padding-right: 64px;
+
+    img {
+        position: relative;
+        z-index: 1;
+    }
 
     h1 {
         font-size: 32px;
@@ -158,11 +170,6 @@ hr {
 
 .margin-10 {
     margin-top: -100px
-}
-
-.pollo-img {
-    position: relative;
-    z-index: 1;
 }
 
 .shade4 {

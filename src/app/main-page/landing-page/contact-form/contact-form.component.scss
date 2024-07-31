@@ -207,10 +207,21 @@ textarea {
     z-index: 0;
     width: 681.44px;
     height: 1127px;
-    margin-top: -1000px;
-    /* margin-bottom: -1000px; */
+    margin-top: -1200px;
     top: 1000px;
     right: -321px;
     left: 923px;
+}
 
+.to-top {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 32px;
+    right: 32px;
+    z-index: 2;
+
+    img {
+        cursor: pointer;
+    }
 }
