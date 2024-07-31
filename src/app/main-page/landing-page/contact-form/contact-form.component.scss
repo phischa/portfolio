@@ -6,13 +6,7 @@ section {
     justify-content: center;
     flex-direction: column;
     background-size: cover;
-    /* padding: 64px 120px 64px 120px; */
 }
-
-/* .row {
-    display: flex;
-    flex-direction: row;
-} */
 
 .headline {
     position: relative;
@@ -220,8 +214,16 @@ textarea {
     bottom: 32px;
     right: 32px;
     z-index: 2;
+}
 
-    img {
+.hover-image {
+    cursor: pointer;
+    content: url('/assets/img/contacts/arrow.svg');
+
+    &:hover {
         cursor: pointer;
+        content: url('/assets/img/contacts/arrow-hover.svg');
     }
 }
+
+

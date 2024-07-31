@@ -180,5 +180,16 @@ hr {
     left: -304.98px;
     width: 636px;
     height: 748.73px;
-    /* rotate: 172.27deg; */
+}
+
+@media (max-width: 1150px) {
+    .project-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-right {
+        display: flex;
+        flex-direction:column-reverse
+    }
 }

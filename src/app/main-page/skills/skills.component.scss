@@ -9,7 +9,6 @@ section {
 .skills {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     position: relative;
     z-index: 2;
 }
@@ -124,7 +123,6 @@ section {
     margin-top: 16px;
     margin-bottom: 16px;
     font-size: 16px;
-    /* Adjust as needed */
 }
 
 .color {
@@ -139,4 +137,32 @@ section {
     width: 528.59px;
     height: 951.44px;
     left: -221.49px;
+}
+
+@media (max-width: 950px) {
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-text {
+        padding-left: 64px;
+    }
+
+    .paragraph {
+        padding: 64px 64px 24px 0px !important;
+    }
+
+    .btn-respond {
+        padding-right: 64px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .skills-img {
+        padding: 24px 24px;
+    }
 }
