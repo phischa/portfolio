@@ -10,6 +10,8 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    position: relative;
+    z-index: 2;
 }
 
 .skills-text {
@@ -102,6 +104,7 @@ section {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(-10px);
     }
@@ -111,6 +114,7 @@ section {
     0% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -119,10 +123,20 @@ section {
 .skill-item p {
     margin-top: 16px;
     margin-bottom: 16px;
-    font-size: 16px; /* Adjust as needed */
+    font-size: 16px;
+    /* Adjust as needed */
 }
 
 .color {
     color: #1FDAE7 !important;
 }
 
+.shade3 {
+    position: relative;
+    z-index: 0;
+    margin-top: -1000px;
+    top: 1200px;
+    width: 528.59px;
+    height: 951.44px;
+    left: -221.49px;
+}
