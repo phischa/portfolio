@@ -229,8 +229,25 @@ hr {
 @media (max-width: 750px) {
     .headline {
         gap: 24px;
+
         h1 {
             font-size: 64px;
+        }
+    }
+
+    .project-right {
+        .text-right {
+            h1 {
+                text-align: left;
+            }
+
+            h2 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
         }
     }
 }
@@ -239,6 +256,7 @@ hr {
     .headline {
         display: flex;
         justify-content: center;
+
         h1 {
             font-size: 56px;
         }
@@ -266,18 +284,15 @@ hr {
             h1 {
                 font-size: 25px;
                 margin-top: 24px;
-                text-align: center;
             }
 
             h2 {
                 font-size: 18px;
-                text-align: center;
             }
 
             p {
                 font-size: 15px;
                 margin-bottom: 24px;
-                text-align: center;
             }
         }
     }

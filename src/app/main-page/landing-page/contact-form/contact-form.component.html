@@ -19,7 +19,7 @@
 
                     <label for="name">Name </label>
                     @if(!name.valid && name.touched && !name.disabled) {
-                    <span class="warn-message">Please enter your name.</span>
+                    <br><span class="warn-message">Please enter your name.</span>
                     }
                     <input class="bg-color" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name"
                         name="name" placeholder="Your name" required
@@ -27,7 +27,7 @@
 
                     <label for="email">Email </label>
                     @if(!email.valid && email.touched && !email.disabled) {
-                    <span class="warn-message">Please enter your email address.</span><br>
+                    <br><span class="warn-message">Please enter your email.</span><br>
                     }
                     <input class="bg-color" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"
                         name="email" placeholder="Your email" required
@@ -36,7 +36,7 @@
 
                     <label for="message">Message </label>
                     @if(!message.valid && message.touched) {
-                    <span class="warn-message">Please write a message.</span><br>
+                    <br><span class="warn-message">Please write a message.</span><br>
                     }
                     <textarea class="bg-color" #message="ngModel" [(ngModel)]="contactData.message" id="message"
                         name="message" placeholder="Your Message" style="height:200px" required
@@ -49,9 +49,10 @@
                     </label>
                     <br>
                     <br>
-                    <input class="btn-primary" type="submit" value="Send" [disabled]="!contactForm.valid"
+                    <div class="btn-centered">
+                        <input class="btn-primary" type="submit" value="Send" [disabled]="!contactForm.valid"
                         [ngClass]="{'btn-disabled': !contactForm.valid}">
-
+                    </div>
                 </form>
             </div>
         </div>
