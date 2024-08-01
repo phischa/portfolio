@@ -147,6 +147,7 @@ section {
 
     .skills-text {
         padding-left: 64px;
+        padding-top: 0px;
     }
 
     .paragraph {
@@ -163,6 +164,31 @@ section {
 
 @media (max-width: 700px) {
     .skills-img {
-        padding: 24px 24px;
+        padding: 64px 24px 16px 24px;
+    }
+}
+
+@media (max-width: 435px) {
+    .skills-text {
+        padding-left: 24px;
+        padding-top: 0px;
+    }
+
+    .paragraph {
+        padding: 64px 24px 24px 0px !important;
+    }
+
+    .btn-respond {
+        padding-right: 24px;
+    }
+
+    .skills-img {
+        padding: 64px 16px 24px 16px;
+    }
+
+    .skill-item img {
+        max-width: 100px;
+        padding: 16px 40px 0 40px;
+        transition: transform 250ms;
     }
 }
