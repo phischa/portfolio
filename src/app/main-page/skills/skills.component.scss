@@ -6,6 +6,14 @@ section {
     box-sizing: border-box;
 }
 
+.bg-blending {
+    box-sizing: border-box;
+    width: 190%;
+    height: 2000px;
+    margin-bottom: -1100px;
+    margin-top: -900px;
+}
+
 .skills {
     display: flex;
     justify-content: center;
@@ -142,16 +150,15 @@ section {
 @media (max-width: 950px) {
     .skills {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .skills-text {
         padding-left: 64px;
-        padding-top: 0px;
     }
 
     .paragraph {
-        padding: 64px 64px 24px 0px !important;
+        padding: 24px 64px 24px 0px !important;
     }
 
     .btn-respond {
@@ -161,21 +168,41 @@ section {
     }
 }
 
+@media (max-width: 750px) {
+    .headline {
+        gap: 24px !important;
+
+        h1 {
+            font-size: 64px;
+        }
+    }
+
+    .shade3 {
+        width: 500px;
+        height: 900px;
+        left: -291.49px;
+    }
+}
 
 @media (max-width: 700px) {
     .skills-img {
-        padding: 64px 24px 16px 24px;
+        padding: 24px 24px 16px 24px;
     }
 }
 
 @media (max-width: 435px) {
     .skills-text {
         padding-left: 24px;
-        padding-top: 0px;
+    }
+
+    .headline {
+        h1 {
+            font-size: 40px;
+        }
     }
 
     .paragraph {
-        padding: 64px 24px 24px 0px !important;
+        padding: 24px 24px 24px 0px !important;
     }
 
     .btn-respond {
@@ -183,7 +210,7 @@ section {
     }
 
     .skills-img {
-        padding: 64px 16px 24px 16px;
+        padding: 24px 16px 24px 16px;
     }
 
     .skill-item img {

@@ -1,17 +1,15 @@
 section {
-    height: 100vh;
-    width: 100%;
     background-color: #151D2E;
     background-position: 50% 50%;
     color: white;
     background-size: cover;
+    box-sizing: border-box;
 }
 
 .about-me {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    height: 100vh;
     width: 100%;
 }
 
@@ -26,6 +24,7 @@ section {
     }
 
     p {
+        padding-top: 64px;
         font-size: 16px;
         font-weight: 400;
         line-height: 19.2px;
@@ -37,10 +36,37 @@ section {
     padding: 64px 120px 64px 120px;
 }
 
-.bg-blending {
-    width: 110%;
-    height: 2000px;
-    margin-top: -900px;
+@media (max-width: 950px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .about-me-text {
+        gap: 24px;
+        padding: 64px;
+
+        h1 {
+            font-size: 64px;
+        }
+
+        p {
+            padding-top: 24px;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    .about-me-text {
+        padding: 24px;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
 }
 
 /* @media (max-width: 1250px) {
