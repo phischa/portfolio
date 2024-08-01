@@ -3,13 +3,16 @@ section {
     background-position: 50% 50%;
     color: white;
     background-size: cover;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 64px 0 64px 0;
     border-top: 1px solid #70E61C;
     position: relative;
     z-index: 2;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
@@ -61,7 +64,6 @@ section {
 
     img:hover {
         transform: scale(1.25);
-        /* Adjust the scale factor as needed */
     }
 
     img:hover~img {
@@ -70,5 +72,22 @@ section {
 
     img:hover~img:hover {
         transform: scale(1);
+    }
+}
+
+.imprint-content {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    section {
+        padding: 40px 0 40px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 24px;
     }
 }
