@@ -110,6 +110,29 @@ body {
     }
 }
 
+@media (max-width: 435px) {
+    .btn-primary {
+        width: 142.24px;
+        height: 50px;
+        font-size: 14px;
+        padding: 12px 24px 12px 24px;
+    }
+
+    .btn-tertiary {
+        width: 142.24px;
+        height: 50px;
+        font-size: 14px;
+        padding: 12px 24px 12px 24px;
+    }
+
+    .btn-secondary {
+        width: 142.24px;
+        height: 50px;
+        font-size: 14px;
+        padding: 12px 24px 12px 24px;
+    }
+}
+
 //SCROLLBAR
 
 /* width */
