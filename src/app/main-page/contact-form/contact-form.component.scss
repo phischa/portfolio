@@ -100,7 +100,7 @@ textarea {
 
 .container {
     border-radius: 5px;
-    padding: 20px 120px 20px 20px;
+    padding: 20px 120px 64px 20px;
     width: 50%;
 }
 
@@ -197,13 +197,12 @@ textarea {
 
 .shade6 {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     z-index: 0;
-    width: 681.44px;
     height: 1127px;
     margin-top: -1200px;
-    top: 1000px;
-    right: -321px;
-    left: 923px;
 }
 
 .to-top {
@@ -212,7 +211,7 @@ textarea {
     justify-content: flex-end;
     bottom: 32px;
     right: 32px;
-    z-index: 2;
+    z-index: 6;
 }
 
 .hover-image {

@@ -4,6 +4,7 @@ section {
     color: white;
     background-size: cover;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .headline {
@@ -271,6 +272,7 @@ hr {
     }
 
     .subline {
+        padding: 0 16px;
         margin-top: -12px;
     }
 

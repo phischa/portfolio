@@ -4,9 +4,30 @@
     scroll-behavior: smooth;
 }
 
+html {
+    background-color: #1D273C;
+}
+
 body {
+    /* display: flex;
+    justify-content: center; */
+    /* overflow-x: hidden; */
+    background-position: 50% 50%;
+    z-index: 5;
+    margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+    body {
+        width: 100%;
+    }
+}
+
+.main-container {
+    max-width: 2160px;
+    background-color: #1D273C;
+    margin: 0 auto;
     overflow-x: hidden;
-    background-color: #151D2E;
 }
 
 .margin-top48 {

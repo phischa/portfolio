@@ -1,11 +1,28 @@
-<nav>
-    <div>
-        <a href="#" class="logo">ps<p class="purple">DEV</p></a>
-    </div>
+
+    <nav>
+        <div class="nav-frame">
+            <div>
+                <a href="#" class="logo">ps<p class="purple">DEV</p></a>
+            </div>
     
-    <div>
-        <a href="#about-me" class="navbar-link">About Me</a>
-        <a href="#skills" class="navbar-link">Skills</a>
-        <a href="#portfolio" class="navbar-link">Portfolio</a>
-    </div>
-</nav>
+            <div class="navbar-links" [ngClass]="{'menu-active': isMenuActive}">
+                <a href="#about-me" class="navbar-link">About Me</a>
+                <a href="#skills" class="navbar-link">Skills</a>
+                <a href="#portfolio" class="navbar-link">Portfolio</a>
+            </div>
+    
+            <div class="burger-menu" (click)="toggleMenu()">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+    
+            <div class="overlay" [ngClass]="{'active': isMenuActive}" (click)="toggleMenu()">
+                <div class="overlay-content">
+                    <a href="#about-me" class="navbar-link">About Me</a>
+                    <a href="#skills" class="navbar-link">Skills</a>
+                    <a href="#portfolio" class="navbar-link">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </nav>

@@ -4,15 +4,17 @@ section {
     color: white;
     background-size: cover;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
-.bg-blending {
-    box-sizing: border-box;
-    width: 190%;
-    height: 2000px;
-    margin-bottom: -1100px;
+/* .bg-blending {
+    position: relative;
+    width: 100vw;
+    max-width: 2160px;
+    height: 1250px;
+    margin-bottom: -700px;
     margin-top: -900px;
-}
+} */
 
 .skills {
     display: flex;
