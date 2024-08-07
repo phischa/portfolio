@@ -226,6 +226,14 @@ section {
             line-height: 49.1px;
         }
     }
+
+    .shade1 {
+        left: -399.23px;
+    }
+    
+    .shade2 {
+        right: -349.23px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -293,6 +301,15 @@ section {
     .scroll {
         display: none;
     }
+
+    .shade1 {
+        top: 1050px;
+        left: -299.23px;
+    }
+    
+    .shade2 {
+        right: -319.23px;
+    }
 }
 
 @media (max-width: 470px) {
@@ -306,6 +323,14 @@ section {
     .titel-box {
         padding: 0 20px 0 48px;
         
+    }
+
+    .shade1 {
+        left: -279.23px;
+    }
+    
+    .shade2 {
+        right: -309.23px;
     }
 }
 

@@ -18,11 +18,14 @@ section {
 .logo {
     display: flex;
     flex-direction: row;
-    color: white;
     font-weight: 600;
     font-size: 24px;
     text-decoration: none;
     letter-spacing: 2px;
+    background-image: url('/assets/img/landingPage/purple-1741713_640.jpg');
+    background-position: 75% 25%;
+    background-clip: text;
+    color: transparent;
 
     &:hover {
         cursor: pointer;
@@ -32,6 +35,7 @@ section {
 .imprint {
     text-decoration: none;
     color: white;
+
     &:hover {
         cursor: pointer;
     }
