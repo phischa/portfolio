@@ -35,6 +35,7 @@ nav {
 
     .navbar-links {
         display: flex;
+        align-items: center;
     }
 
     .navbar-link {
@@ -49,6 +50,16 @@ nav {
         &:hover {
             cursor: pointer;
             color: #9647FE;
+        }
+    }
+
+    .language-box {
+        display: flex;
+        gap: 16px;
+        margin: 32px;
+
+        .language {
+            height: 18px;
         }
     }
 
@@ -100,6 +111,16 @@ nav {
     &:hover {
         cursor: pointer;
         color: #9647FE;
+    }
+}
+
+@media (max-width: 1050px) {
+    .navbar-link {
+        margin: 32px 24px !important;
+    }
+
+    .language-box {
+        margin: 32px 24px !important;
     }
 }
 

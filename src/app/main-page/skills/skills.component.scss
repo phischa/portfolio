@@ -7,14 +7,14 @@ section {
     /* overflow-x: hidden; */
 }
 
-/* .bg-blending {
+.bg-blending {
     position: relative;
-    width: 100vw;
-    max-width: 2160px;
-    height: 1250px;
-    margin-bottom: -700px;
-    margin-top: -900px;
-} */
+    left: -200px;
+    right: 0;
+    height: 3500px;
+    margin-bottom: -2100px;
+    margin-top: -2000px;
+}
 
 .skills {
     display: flex;
