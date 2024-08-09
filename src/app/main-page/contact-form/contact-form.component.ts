@@ -23,6 +23,7 @@ export class ContactFormComponent {
   }
 
   mailTest = true;
+  successMessage: string | null = null;
 
   post = {
     endPoint: 'https://philip-schaper.de/sendMail.php',
@@ -42,11 +43,12 @@ export class ContactFormComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            // hier kann hinzugefügt werden, was immer an Funktionalität gewünscht ist.
+            this.successMessage = "Your message has been sent successfully!"; 
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
+            this.successMessage = null;
           },
           complete: () => console.info('send post complete'),
         });
