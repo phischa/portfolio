@@ -35,6 +35,10 @@ section {
 }
 
 .about-me-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 120px 120px 64px 120px;
 }
 
