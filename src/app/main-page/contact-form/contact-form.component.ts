@@ -25,7 +25,7 @@ export class ContactFormComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://philip-schaper.developerakademie.net/angular-projects/contactForm/sendMail.php',
+    endPoint: 'https://philip-schaper.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -36,6 +36,8 @@ export class ContactFormComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+    console.log(this.contactData);
+    
     if (ngForm.submitted && ngForm.form.valid /* && !this.mailTest */) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({

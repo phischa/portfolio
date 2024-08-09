@@ -32,6 +32,14 @@ section {
     }
 }
 
+.logo-img {
+    height: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .imprint {
     text-decoration: none;
     color: white;

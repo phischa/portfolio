@@ -74,6 +74,10 @@ section {
     }
 }
 
+.btn-ref {
+    text-decoration: none;
+}
+
 .btn-bigger {
     transition: transform 250ms;
     transform: scale(1) translate(0, 0);
