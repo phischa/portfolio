@@ -212,7 +212,8 @@ textarea {
     justify-content: flex-end;
     bottom: 32px;
     right: 32px;
-    z-index: 6;
+    z-index: 1;
+    margin-top: 16px;
 }
 
 .hover-image {
@@ -245,9 +246,16 @@ textarea {
         justify-content: center;
     }
 
+    .success-message {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
     .btn-centered {
         display: flex;
         justify-content: center;
+        margin-top: -20px;
     }
 }
 
@@ -274,7 +282,16 @@ textarea {
     .to-top {
         bottom: 18px;
         right: 18px;
-        margin-top: 16px;
+        margin-top: 80px;
+    }
+
+    .success-message {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .btn-centered {
+        margin-top: -24px;
     }
 }
 

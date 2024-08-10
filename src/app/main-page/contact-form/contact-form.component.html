@@ -42,18 +42,26 @@
                         [ngClass]="{'error-border': !message.valid && message.touched}"></textarea>
                     <br>
                     <label for="checkbox" class="check">
-                        <input type="checkbox" id="checkbox" [(ngModel)]="contactData.checkbox" name="checkbox" required>
+                        <input type="checkbox" id="checkbox" [(ngModel)]="contactData.checkbox" name="checkbox"
+                            required>
                         <span class="checkmark"></span>
-                        <p>I've read the <a href="/privacy"><span class="purple">privacy policy</span></a> and agree to the processing of my data as outlined.</p>
+                        <p>I've read the <a href="/privacy"><span class="purple">privacy policy</span></a> and agree to
+                            the processing of my data as outlined.</p>
                     </label>
                     <br>
-                    <div *ngIf="successMessage" class="success-message">
+                    <div *ngIf="successMessage" class="success-message green">
                         {{ successMessage }}
                     </div>
                     <br>
-                    <div class="btn-centered">
-                        <input class="btn-primary" type="submit" value="Send" [disabled]="!contactForm.valid"
+                    <!-- <div class="btn-centered">
+                    <input class="btn-primary" type="submit" value="Send" [disabled]="!contactForm.valid"
                         [ngClass]="{'btn-disabled': !contactForm.valid}">
+                    </div> -->
+                    <div class="btn-centered">
+                        <button class="btn-primary" type="submit"
+                            [ngClass]="{'btn-disabled': !contactForm.valid}" [disabled]="!contactForm.valid">
+                            Send
+                        </button>
                     </div>
                 </form>
             </div>
