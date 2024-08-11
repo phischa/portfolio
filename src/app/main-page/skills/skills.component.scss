@@ -12,8 +12,8 @@ section {
     left: -200px;
     right: 0;
     height: 3500px;
-    margin-bottom: -2100px;
-    margin-top: -2000px;
+    margin-bottom: -2040px;
+    margin-top: -2060px;
 }
 
 .skills {
@@ -151,6 +151,26 @@ section {
     width: 528.59px;
     height: 951.44px;
     left: -221.49px;
+}
+
+@media (min-width: 1600px) {
+    .bg-blending {
+        margin-bottom: -2080px;
+        margin-top: -2060px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .bg-blending {
+        margin-bottom: -2120px;
+        margin-top: -2060px;
+    }
+}
+
+@media (min-width: 2100px) {
+    .bg-blending {
+        margin-bottom: -2160px;
+    }
 }
 
 @media (max-width: 950px) {

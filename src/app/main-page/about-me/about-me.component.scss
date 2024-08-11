@@ -15,7 +15,7 @@ section {
 }
 
 .about-me-text {
-    padding: 64px 120px 64px 120px;
+    padding: 64px 64px 64px 120px;
 
     h1 {
         font-size: 90px;
@@ -37,9 +37,49 @@ section {
 .about-me-img {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    padding: 120px 120px 64px 120px;
+    padding: 64px 120px 46px 64px;
+
+    img {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .about-me-text {
+        padding: 64px 320px 64px 120px !important;
+    }
+
+    .about-me-img {
+        padding: 64px 120px 56px 320px !important;
+    }
+}
+
+@media (min-width: 1500px) {
+    .about-me-text {
+        padding: 64px 120px 64px 120px;
+    }
+
+    .about-me-img {
+        padding: 64px 120px 56px 120px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .about-me-text {
+        padding: 64px 120px 64px 120px;
+    }
+
+    .about-me-img {
+        padding: 64px 120px 56px 120px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-me-text {
+        padding: 64px 120px 80px 120px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -48,7 +88,11 @@ section {
         flex-direction: column;
     }
 
+    .about-me-img {
+        padding: 0px 64px 44px 64px;
+    }
 }
+
 
 @media (max-width: 750px) {
     .about-me-text {
