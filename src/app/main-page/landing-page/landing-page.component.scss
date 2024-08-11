@@ -176,21 +176,21 @@ section {
     .title-rotate {
         font-size: 67.2px;
         line-height: 80.6px;
-    
+
         span {
             width: 149.2px;
             height: 40.6px;
         }
     }
-    
+
     .titel {
         gap: 5px;
-    
+
         h1 {
             font-size: 95.5px;
             line-height: 109.7px;
         }
-    
+
         h2 {
             font-size: 48px;
             line-height: 54.9px;
@@ -206,21 +206,21 @@ section {
     .title-rotate {
         font-size: 56px;
         line-height: 67.2px;
-    
+
         span {
             width: 149.2px;
             height: 10px;
         }
     }
-    
+
     .titel {
         gap: 5px;
-    
+
         h1 {
             font-size: 80px;
             line-height: 92px;
         }
-    
+
         h2 {
             font-size: 40px;
             line-height: 49.1px;
@@ -230,7 +230,7 @@ section {
     .shade1 {
         left: -399.23px;
     }
-    
+
     .shade2 {
         right: -349.23px;
     }
@@ -240,21 +240,21 @@ section {
     .title-rotate {
         font-size: 44.8px;
         line-height: 53.8px;
-    
+
         span {
             width: 149.2px;
             height: 5px;
         }
     }
-    
+
     .titel {
         gap: 5px;
-    
+
         h1 {
             font-size: 63.7px;
             line-height: 73.3px;
         }
-    
+
         h2 {
             font-size: 32px;
             line-height: 39.3px;
@@ -270,7 +270,7 @@ section {
             line-height: 54px;
             text-align: left;
         }
-    
+
         h2 {
             font-size: 29px;
             font-weight: 400;
@@ -294,7 +294,7 @@ section {
     }
 
     .link-section {
-        gap: 24px;
+        gap: 32px;
         left: 0px;
     }
 
@@ -306,7 +306,7 @@ section {
         top: 1050px;
         left: -299.23px;
     }
-    
+
     .shade2 {
         right: -319.23px;
     }
@@ -315,26 +315,32 @@ section {
 @media (max-width: 470px) {
     .titel-box {
         padding: 0 20px 0 56px;
-        
     }
-    
+
     .bottom-section {
-        
-        bottom: 56px;
-        
+        bottom: 40px;
+    }
+
+    .link-section {
+        img {
+            width: 36px;
+        }
+
+        hr {
+            width: 56px;
+        }
     }
 }
 
 @media (max-width: 455px) {
     .titel-box {
         padding: 0 20px 0 48px;
-        
     }
 
     .shade1 {
         left: -279.23px;
     }
-    
+
     .shade2 {
         right: -309.23px;
     }
@@ -343,27 +349,28 @@ section {
 @media (max-width: 435px) {
     .titel-box {
         padding: 0 8px 0 40px;
-        
     }
 }
 
 @media (max-width: 420px) {
     .titel-box {
         padding: 0 16px 0 32px;
-        
+
     }
 }
 
 @media (max-width: 400px) {
     .titel-box {
         padding: 0 40px 0 20px;
-        
     }
 }
 
 @media (max-width: 380px) {
     .titel-box {
         padding: 0 40px 0 8px;
-        
+    }
+
+    .bottom-section {
+        bottom: 20px;
     }
 }

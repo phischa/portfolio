@@ -247,6 +247,7 @@ hr {
 @media (max-width: 750px) {
     .headline {
         gap: 24px;
+        margin-bottom: -120px;
 
         h1 {
             font-size: 64px;
@@ -270,17 +271,17 @@ hr {
         justify-content: center;
 
         h1 {
-            font-size: 56px;
+            font-size: 44px;
         }
     }
 
-    hr {
+    /* hr {
         display: none;
-    }
+    } */
 
-    .hr-invisible {
+    /* .hr-invisible {
         display: none;
-    }
+    } */
 
     .subline {
         padding: 0 16px;
@@ -308,6 +309,10 @@ hr {
                 margin-bottom: 24px;
             }
         }
+    }
+
+    .padding-bottom {
+        padding-bottom: 0px;
     }
 
     .project-right {

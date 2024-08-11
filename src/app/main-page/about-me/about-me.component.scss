@@ -46,9 +46,9 @@ section {
     }
 }
 
-@media (min-width: 2500px) {
+@media (min-width: 2000px) {
     .about-me-text {
-        padding: 64px 320px 64px 120px !important;
+        padding: 64px 220px 64px 120px !important;
     }
 
     .about-me-img {
@@ -78,7 +78,11 @@ section {
 
 @media (max-width: 1200px) {
     .about-me-text {
-        padding: 64px 120px 80px 120px;
+        padding: 64px 8px 80px 120px;
+    }
+
+    .about-me-img {
+        padding: 64px 120px 56px 64px;
     }
 }
 
@@ -86,6 +90,10 @@ section {
     .about-me {
         display: flex;
         flex-direction: column;
+    }
+
+    .about-me-text {
+        padding: 64px 64px 80px 64px;
     }
 
     .about-me-img {
@@ -101,7 +109,7 @@ section {
 
         h1 {
             font-size: 64px;
-        }
+        }   
 
         p {
             padding-top: 24px;
@@ -110,11 +118,15 @@ section {
 }
 
 @media (max-width: 435px) {
+    section {
+        padding-top: 64px;
+    }
+
     .about-me-text {
-        padding: 24px;
+        padding: 0px 24px 24px 24px;
 
         h1 {
-            font-size: 40px;
+            font-size: 44px;
         }
     }
 }

@@ -40,8 +40,15 @@ body {
 }
 
 .scroll-offset2 {
-    padding-top: 140px;
+    padding-top: 150px;
     margin-top: -80px;
+}
+
+@media (max-width: 750px) {
+    .scroll-offset2 {
+        padding-top: 100px;
+        margin-top: -80px;
+    }
 }
 
 //COLOURS
