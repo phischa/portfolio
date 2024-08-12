@@ -20,26 +20,38 @@
                     @if(!name.valid && name.touched && !name.disabled) {
                     <br><span class="warn-message">Please enter your name.</span>
                     }
-                    <input class="bg-color" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name"
-                        name="name" placeholder="Your name" required
-                        [ngClass]="{'error-border': !name.valid && name.touched && !name.disabled}">
+                    <div class="input-container">
+                        <input class="bg-color" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name"
+                            name="name" placeholder="Your name" required
+                            [ngClass]="{'error-border': !name.valid && name.touched && !name.disabled}">
+                        <img *ngIf="!name.valid && name.touched" src="assets/img/contacts/red.png" class="status-icon error-icon" alt="Error">
+                        <img *ngIf="name.valid" src="assets/img/contacts/green.png" class="status-icon success-icon" alt="Success">
+                    </div>
 
                     <label for="email">Email </label>
                     @if(!email.valid && email.touched && !email.disabled) {
                     <br><span class="warn-message">Please enter your email.</span><br>
                     }
-                    <input class="bg-color" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"
-                        name="email" placeholder="Your email" required
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                        [ngClass]="{'error-border': !email.valid && email.touched && !email.disabled}">
+                    <div class="input-container">
+                        <input class="bg-color" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"
+                            name="email" placeholder="Your email" required
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                            [ngClass]="{'error-border': !email.valid && email.touched && !email.disabled}">
+                        <img *ngIf="!email.valid && email.touched" src="assets/img/contacts/red.png" class="status-icon error-icon" alt="Error">
+                        <img *ngIf="email.valid" src="assets/img/contacts/green.png" class="status-icon success-icon" alt="Success">
+                    </div>
 
                     <label for="message">Message </label>
                     @if(!message.valid && message.touched) {
                     <br><span class="warn-message">Please write a message.</span><br>
                     }
-                    <textarea class="bg-color" #message="ngModel" [(ngModel)]="contactData.message" id="message"
-                        name="message" placeholder="Your Message" style="height:200px" required
-                        [ngClass]="{'error-border': !message.valid && message.touched}"></textarea>
+                    <div class="textarea-container">
+                        <textarea class="bg-color" #message="ngModel" [(ngModel)]="contactData.message" id="message"
+                            name="message" placeholder="Your Message" style="height:200px" required
+                            [ngClass]="{'error-border': !message.valid && message.touched}"></textarea>
+                        <img *ngIf="!message.valid && message.touched" src="assets/img/contacts/red.png" class="status-icon2 error-icon" alt="Error">
+                        <img *ngIf="message.valid" src="assets/img/contacts/green.png" class="status-icon2 success-icon" alt="Success">
+                    </div>
                     <br>
                     <label for="checkbox" class="check">
                         <input type="checkbox" id="checkbox" [(ngModel)]="contactData.checkbox" name="checkbox"

@@ -91,11 +91,68 @@ textarea {
     }
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #151D2E inset; 
+    box-shadow: 0 0 0 30px #151D2E inset; 
+    -webkit-text-fill-color: white; 
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px #151D2E inset; 
+    box-shadow: 0 0 0 30px #151D2E inset;
+}
+
 .contact-form {
     display: flex;
     padding-bottom: 32px;
     width: 100%;
     justify-content: flex-end;
+}
+
+.textarea-container {
+    position: relative;
+    width: 100%;
+}
+
+.textarea-container textarea {
+    width: 100%;
+    padding-right: 30px; 
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+    padding-right: 30px; 
+}
+
+.status-icon {
+    position: absolute;
+    right: 10px; 
+    top: 43%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px;
+}
+
+.status-icon2 {
+    position: absolute;
+    right: 10px;
+    top: 13%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.error-icon {
+    display: block; /* Show error icon */
+}
+
+.success-icon {
+    display: block; /* Show success icon */
 }
 
 .container {
