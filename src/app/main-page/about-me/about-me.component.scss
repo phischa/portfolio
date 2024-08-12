@@ -41,7 +41,14 @@ section {
     align-items: center;
     padding: 64px 120px 46px 64px;
 
-    img {
+    .img-background {
+        position: relative;
+        top: -450px;
+        z-index: 0;
+        max-width: 400px;
+    }
+
+    .img-portrait {
         max-width: 400px;
     }
 }
