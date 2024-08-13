@@ -259,8 +259,23 @@ input:-webkit-autofill:focus {
     flex-wrap: wrap;
     justify-content: flex-end;
     z-index: 0;
+    width: -500px;
     height: 1127px;
     margin-top: -1200px;
+}
+
+@media (min-width: 1200px) {
+    .shade6 {
+        position: relative;
+        left: -20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        z-index: 0;
+        width: -500px;
+        height: 1127px;
+        margin-top: -1200px;
+    }
 }
 
 .to-top {

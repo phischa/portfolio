@@ -155,21 +155,33 @@ section {
 
 @media (min-width: 1600px) {
     .bg-blending {
+        margin-bottom: -2060px;
+        margin-top: -2020px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .bg-blending {
         margin-bottom: -2080px;
-        margin-top: -2060px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .bg-blending {
+        margin-bottom: -2110px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .bg-blending {
+        margin-bottom: -2120px;
     }
 }
 
 @media (min-width: 2000px) {
     .bg-blending {
-        margin-bottom: -2120px;
+        margin-bottom: -2130px;
         margin-top: -2060px;
-    }
-}
-
-@media (min-width: 2100px) {
-    .bg-blending {
-        margin-bottom: -2160px;
     }
 }
 
