@@ -5,7 +5,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
     providedIn: 'root'
 })
 export class TranslationService {
-    private currentLanguage: 'en' | 'de' = 'en';
+    public currentLanguage: 'en' | 'de' = 'en';
 
     private translations = {
         en: {
@@ -31,6 +31,23 @@ export class TranslationService {
         }
     };
 
+    private landingTranslations = {
+        en: {
+            title: 'I am',
+            name: 'Philip Schaper',
+            role: 'FRONTEND DEVELOPER',
+            getInTouch: 'Get in touch',
+            scrollDown: 'Scroll down'
+        },
+        de: {
+            title: 'Ich bin',
+            name: 'Philip Schaper',
+            role: 'FRONTEND-ENTWICKLER',
+            getInTouch: 'Kontakt',
+            scrollDown: 'Scrollen'
+        }
+    };
+
     constructor(private sanitizer: DomSanitizer) { }
 
     get currentText() {
@@ -40,8 +57,13 @@ export class TranslationService {
         };
     }
 
+    get currentLandingText() {
+        return this.landingTranslations[this.currentLanguage];
+    }
+
     setLanguage(language: 'en' | 'de') {
         this.currentLanguage = language;
     }
 }
+
 

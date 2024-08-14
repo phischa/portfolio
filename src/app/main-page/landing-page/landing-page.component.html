@@ -1,21 +1,20 @@
 <section>
     <img class="shade1" src="assets/img/shades/30. Purple shadow about me.svg" alt="">
     <img class="shade2" src="assets/img/shades/52. Blue shadow 1 V2.svg" alt="">
-    <!-- <app-nav-bar></app-nav-bar> -->
-
+    
     <div class="titel-box">
-        <div class="title-rotate">
-            <span>I am</span>
+        <div class="title-rotate" [ngClass]="{'german-text': isGerman()}">
+            <span>{{ landingText.title }}</span>
         </div>
         <div class="titel">
-            <h1>Philip Schaper</h1>
-            <h2>FRONTEND DEVELOPER</h2>
+            <h1>{{ landingText.name }}</h1>
+            <h2>{{ landingText.role }}</h2>
         </div>
     </div>
     
     <div>
         <a href="#contact" class="btn-ref">
-            <button class="btn-primary margin-top48 btn-bigger">Get in touch</button>
+            <button class="btn-primary margin-top48 btn-bigger">{{ landingText.getInTouch }}</button>
         </a>
     </div>
     <div class="bottom-section">
@@ -34,7 +33,7 @@
 
         <div class="scroll">
             <span>
-                Scroll down
+                {{ landingText.scrollDown }}
             </span>
             <img src="assets/img/landingPage/Vector.svg" alt="">
         </div>

@@ -1,14 +1,28 @@
 import { Component } from '@angular/core';
-/* import { NavBarComponent } from './nav-bar/nav-bar.component'; */
-
+import { CommonModule } from '@angular/common';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [/* NavBarComponent */],
+  imports: [CommonModule],
   templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss'
+  styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
+  constructor(public translationService: TranslationService) {}
 
+  changeLanguage(language: 'en' | 'de') {
+    this.translationService.setLanguage(language);
+  }
+
+  get landingText() {
+    return this.translationService.currentLandingText;
+  }
+
+  isGerman() {
+    return this.translationService.currentLanguage === 'de';
+  }
 }
+
+

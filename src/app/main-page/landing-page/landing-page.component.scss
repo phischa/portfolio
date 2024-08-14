@@ -37,6 +37,10 @@ section {
     }
 }
 
+.german-text {
+    font-size: 60px !important;
+}
+
 .titel {
     display: flex;
     flex-direction: column;
@@ -173,7 +177,7 @@ section {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1210px) {
     .title-rotate {
         font-size: 67.2px;
         line-height: 80.6px;
@@ -182,6 +186,10 @@ section {
             width: 149.2px;
             height: 40.6px;
         }
+    }
+
+    .german-text {
+        font-size: 44.5px !important;
     }
 
     .titel {
@@ -212,6 +220,10 @@ section {
             width: 149.2px;
             height: 10px;
         }
+    }
+
+    .german-text {
+        font-size: 38px !important;
     }
 
     .titel {
@@ -246,6 +258,10 @@ section {
             width: 149.2px;
             height: 5px;
         }
+    }
+
+    .german-text {
+        font-size: 30px !important;
     }
 
     .titel {
@@ -292,6 +308,10 @@ section {
             height: 33px;
             gap: 0px;
         }
+    }
+
+    .german-text {
+        font-size: 21px !important;
     }
 
     .link-section {
