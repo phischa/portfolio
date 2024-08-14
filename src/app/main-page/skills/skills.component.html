@@ -5,12 +5,10 @@
     <img class="shade3" src="assets/img/shades/31. Green shadow Skills Portfolio.svg" alt="">
     <div class="skills">
         <div class="skills-img">
-            @for (skill of skills; track skill) {
-            <div class="skill-item">
+            <div *ngFor="let skill of skills" class="skill-item">
                 <img [src]="skill.src" [alt]="skill.text" [class.color]="skill.color">
                 <p [class.color]="skill.color">{{ skill.text }}</p>
             </div>
-            }
         </div>
         <div class="skills-text">
             <div class="headline">
@@ -19,12 +17,10 @@
             </div>
             <div class="paragraph">
                 <p>
-                    My journey involved working on diverse projects, employing a range of frontend technologies and
-                    concepts. I am open to embracing new frameworks, technologies and methodologies to continously enhance my skills
-                    and stay ahead in the ever-evolving landscape of web development.
+                    {{ skillText.contentOne }}
                 </p>
-                <h2>Looking for <span class="purple">another skill</span>?</h2>
-                <p>Feel free to contact me. I'm looking forward to expand my current knowledge.</p>
+                <h2 [innerHTML]="skillText.h2"></h2> 
+                <p>{{ skillText.contentTwo }}</p>
             </div>
             <a href="#contact" class="btn-respond btn-ref">
                 <button class="btn-primary margin64 btn-bigger">Get in touch</button>

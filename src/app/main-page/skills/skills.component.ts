@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -21,4 +23,14 @@ export class SkillsComponent {
     { src: 'assets/img/skills/material.svg', text: 'Material' },
     { src: 'assets/img/skills/continually-learning2.svg', text: 'Continually Learning', color: true }
   ];
+
+  constructor(public translationService: TranslationService) {}
+
+  changeLanguage(language: 'en' | 'de') {
+    this.translationService.setLanguage(language);
+  }
+
+  get skillText() {
+    return this.translationService.currentSkillText;
+  }
 }

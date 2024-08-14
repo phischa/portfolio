@@ -43,10 +43,48 @@ export class TranslationService {
             title: 'Ich bin',
             name: 'Philip Schaper',
             role: 'FRONTEND-ENTWICKLER',
-            getInTouch: 'Kontakt',
-            scrollDown: 'Scrollen'
+            getInTouch: 'Get in touch',
+            scrollDown: 'Scroll down'
         }
     };
+
+    private skillTranslations = {
+        en: {
+            contentOne: `My journey involved working on diverse projects, employing a range of
+            frontend technologies and concepts. I am open to embracing new frameworks, technologies
+            and methodologies to continously enhance my skills and stay ahead in the ever-evolving
+            landscape of web development`,
+            h2: `Looking for <span class="purple">another skill</span>?`,
+            contentTwo: `Feel free to contact me. I'm looking forward to expand my current knowledge.`,
+        },
+        de: {
+            contentOne: `Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe 
+            von Frontend-Technologien und Konzepten eingesetzt. Ich bin offen für neue Frameworks, Technologien 
+            und Methoden, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden 
+            Webentwicklung up to date zu bleiben.`,
+            h2: `Suchen Sie nach <span class="purple">einem anderen Skill</span>?`,
+            contentTwo: `Kontaktieren Sie mich gerne. Ich freue mich darauf meine Fähigkeiten auszuweiten.`,
+        }
+    }
+
+    private portfolioTranslations = {
+        en: {
+            join: `Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
+            assign users and categories.`,
+            polloLoco: `Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco
+            salsa to fight against the crazy hen.`,
+            pokedex: `This pokédex is based on the PokéAPI, a simple library that provides and catalogues pokemon information.`,
+            liveTest: `Live test`
+        },
+        de: {
+            join: `Task Manager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe
+            von Drag-and-Drop-Funktionen und weisen Sie Benutzer und Kategorien zu.`,
+            polloLoco: `Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, 
+            Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.`,
+            pokedex: `Dieser Pokédex basiert auf der PokéAPI, einer einfachen Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.`,
+            liveTest: `Live Test`
+        }
+    }
 
     constructor(private sanitizer: DomSanitizer) { }
 
@@ -61,9 +99,16 @@ export class TranslationService {
         return this.landingTranslations[this.currentLanguage];
     }
 
+    get currentSkillText() {
+        return this.skillTranslations[this.currentLanguage];
+    }
+
+    get currentPortfolioText() {
+        return this.portfolioTranslations[this.currentLanguage];
+    }
+
     setLanguage(language: 'en' | 'de') {
         this.currentLanguage = language;
     }
 }
-
 
