@@ -1,24 +1,8 @@
 <section id="about-me" class="scroll-offset">
     <div class="about-me">
         <div class="about-me-text">
-            <h1>About me</h1>
-            <p>
-                Hello, my name is Philip and I am a frontend developer based in Berlin.
-                I am passionate about web development because I like the unique mix of logical thinking and creativty that the
-                job requires.
-                <br>
-                <br>
-                My focus is on Angular, JavaScript and object-oriented programming. I have acquired these
-                skills through many project experiences, both working alone and in teams. Take a look at my portfolio further
-                down to see for
-                yourself.
-                <br>
-                <br>
-                My study achievements were driven by a high level of willingness to learn and independent working.
-                These skills will support my continuous knowlegde building in my upcoming role as a frontend developer
-                and I am looking forward to join your team.
-                <br>
-            </p>
+            <h1>{{ translationService.currentText.title }}</h1>
+            <p [innerHTML]="translationService.currentText.content"></p>
         </div>
         <div class="about-me-img">
             <img src="assets/img/aboutMe/portrait.png" alt="">

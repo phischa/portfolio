@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslationService } from '../../translation.service';
 
 
 @Component({
@@ -11,6 +12,13 @@ import { CommonModule } from '@angular/common';
 })
 export class NavBarComponent {
   isMenuActive = false;
+
+  constructor(private translationService: TranslationService) {}
+
+  setLanguage(language: 'en' | 'de') {
+    this.translationService.setLanguage(language);
+  }
+
   @ViewChild('aboutMe') aboutMeRef!: ElementRef;
 
   scrollToAboutMe() {
