@@ -193,9 +193,9 @@ input:-webkit-autofill:focus {
 .check {
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 16px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     padding-left: 35px;
     cursor: pointer;
@@ -379,3 +379,9 @@ input:-webkit-autofill:focus {
         }
     }
 }
+
+/* @media (min-width: 1700px) {
+    .check {
+        padding-left: 30px;
+    }
+} */
