@@ -46,13 +46,13 @@ section {
     }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1920px) {
     .about-me-text {
-        padding: 64px 220px 64px 120px !important;
+        padding: 64px 250px 64px 120px !important;
     }
 
     .about-me-img {
-        padding: 64px 120px 56px 320px !important;
+        padding: 64px 120px 56px 120px !important;
     }
 }
 
@@ -63,6 +63,10 @@ section {
 
     .about-me-img {
         padding: 64px 120px 56px 120px;
+
+        img {
+            max-width: 440px;
+        }
     }
 }
 
@@ -72,17 +76,27 @@ section {
     }
 
     .about-me-img {
-        padding: 64px 120px 56px 120px;
+        padding: 64px 140px 40px 120px;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .about-me-text {
         padding: 64px 8px 80px 120px;
     }
 
     .about-me-img {
-        padding: 64px 120px 56px 64px;
+        padding: 64px 64px 56px 56px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-me-text {
+        padding: 64px 8px 80px 64px;
+    }
+
+    .about-me-img {
+        padding: 64px 64px 56px 56px;
     }
 }
 
@@ -97,7 +111,7 @@ section {
     }
 
     .about-me-img {
-        padding: 0px 64px 44px 64px;
+        padding: 0px 64px 44px 56px;
     }
 }
 

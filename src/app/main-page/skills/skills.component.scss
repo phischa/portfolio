@@ -153,16 +153,34 @@ section {
     left: -221.49px;
 }
 
+@media (min-width: 950px) {
+    .bg-blending {
+        margin-bottom: -2028px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bg-blending {
+        margin-bottom: -2035px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .bg-blending {
+        margin-bottom: -2058px;
+    }
+}
+
 @media (min-width: 1600px) {
     .bg-blending {
-        margin-bottom: -2060px;
+        margin-bottom: -2080px;
         margin-top: -2020px;
     }
 }
 
 @media (min-width: 1700px) {
     .bg-blending {
-        margin-bottom: -2080px;
+        margin-bottom: -2095px;
     }
 }
 
@@ -178,10 +196,9 @@ section {
     }
 }
 
-@media (min-width: 2000px) {
-    .bg-blending {
-        margin-bottom: -2130px;
-        margin-top: -2060px;
+@media (min-width: 1920px) {
+    .shade3 {
+        left: 16px;
     }
 }
 

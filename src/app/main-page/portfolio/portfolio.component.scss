@@ -182,6 +182,12 @@ hr {
     height: 748.73px;
 }
 
+@media (min-width: 1920px) {
+    .shade4 {
+        left: 24px;
+    }
+}
+
 @media (max-width: 1150px) {
     .project-left {
         display: flex;

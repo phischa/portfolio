@@ -177,6 +177,56 @@ section {
     }
 }
 
+@media (min-height: 1000px) {
+    .shade1 {
+        top: 1200px;
+    }
+    
+    .shade2 {
+        top: 750px;
+    }
+}
+
+@media (min-height: 1320px) {
+    .shade1 {
+        top: 1300px;
+    }
+    
+    .shade2 {
+        top: 850px;
+    }
+}
+
+@media (min-height: 1600px) {
+    .shade1 {
+        top: 1400px;
+    }
+    
+    .shade2 {
+        top: 950px;
+    }
+}
+
+@media (min-height: 1800px) {
+    .shade1 {
+        top: 1550px;
+    }
+    
+    .shade2 {
+        top: 1050px;
+    }
+}
+
+@media (min-height: 2000px) {
+    .shade1 {
+        top: 1650px;
+    }
+    
+    .shade2 {
+        top: 1150px;
+    }
+}
+
 @media (max-width: 1210px) {
     .title-rotate {
         font-size: 67.2px;
