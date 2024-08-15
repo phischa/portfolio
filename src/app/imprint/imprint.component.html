@@ -1,31 +1,6 @@
 <section>
     <div>
-        <h1>Impressum</h1>
-        <h2>Verantwortlicher
-            Philip Schaper
-        </h2>
-
-        <p>
-            Postanschrift:
-            Rutnikstraße 38
-            Lichtenberg
-            10367 Berlin
-            <br>
-            Kontakt:
-            E-Mail: ps.dev(a)mailbox.org
-            <br>
-            <br>
-            Hinweise zur Website / Urheberrechtliche Hinweise:
-            <br>
-            Alle verwendeten Bilder wurden von mir selbst erstellt, wurdem von der Developer Akademie zur Verfügung
-            gestellt oder <br>
-            unterliegen der kostenlose Nutzung unter der Pixabay-Inhaltslizenz.
-            <br>
-            <br>
-            Verantwortlich für redaktionelle Inhalte: Philip Schaper
-            <br>
-            <span>Dieses Impressum wurde mit Hilfe des Impressums-Generators der activeMind AG erstellt (Version
-                2024-07-05).</span>
-        </p>
+        <h1>{{ ImprintText.title }}</h1>
+        <div [innerHTML]="ImprintText.content"></div>
     </div>
 </section>

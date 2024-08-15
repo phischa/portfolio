@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslationService } from '../../translation.service';
 
 
 @Component({
@@ -12,6 +13,7 @@ import { FormsModule, NgForm } from '@angular/forms';
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
+  constructor(public translationService: TranslationService) {}
 
   http = inject(HttpClient);
 
@@ -56,6 +58,15 @@ export class ContactFormComponent {
 
       ngForm.resetForm();
     }
+  }
+
+
+  changeLanguage(language: 'en' | 'de') {
+    this.translationService.setLanguage(language);
+  }
+
+  get ContactText() {
+    return this.translationService.currentContactText;
   }
 
   scrollToTop(): void {

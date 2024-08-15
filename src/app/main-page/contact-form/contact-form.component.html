@@ -1,4 +1,4 @@
-<section id="contact" class="scroll-offset2">
+<!-- <section id="contact" class="scroll-offset2">
     <div class="headline">
         <hr class="hr-invisible" />
         <h1>Contact</h1>
@@ -24,8 +24,10 @@
                         <input class="bg-color" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name"
                             name="name" placeholder="Your name" required
                             [ngClass]="{'error-border': !name.valid && name.touched && !name.disabled}">
-                        <img *ngIf="!name.valid && name.touched" src="assets/img/contacts/red.png" class="status-icon error-icon" alt="Error">
-                        <img *ngIf="name.valid" src="assets/img/contacts/green.png" class="status-icon success-icon" alt="Success">
+                        <img *ngIf="!name.valid && name.touched" src="assets/img/contacts/red.png"
+                            class="status-icon error-icon" alt="Error">
+                        <img *ngIf="name.valid" src="assets/img/contacts/green.png" class="status-icon success-icon"
+                            alt="Success">
                     </div>
 
                     <label for="email">Email </label>
@@ -37,8 +39,10 @@
                             name="email" placeholder="Your email" required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                             [ngClass]="{'error-border': !email.valid && email.touched && !email.disabled}">
-                        <img *ngIf="!email.valid && email.touched" src="assets/img/contacts/red.png" class="status-icon error-icon" alt="Error">
-                        <img *ngIf="email.valid" src="assets/img/contacts/green.png" class="status-icon success-icon" alt="Success">
+                        <img *ngIf="!email.valid && email.touched" src="assets/img/contacts/red.png"
+                            class="status-icon error-icon" alt="Error">
+                        <img *ngIf="email.valid" src="assets/img/contacts/green.png" class="status-icon success-icon"
+                            alt="Success">
                     </div>
 
                     <label for="message">Message </label>
@@ -49,8 +53,10 @@
                         <textarea class="bg-color" #message="ngModel" [(ngModel)]="contactData.message" id="message"
                             name="message" placeholder="Your Message" style="height:200px" required
                             [ngClass]="{'error-border': !message.valid && message.touched}"></textarea>
-                        <img *ngIf="!message.valid && message.touched" src="assets/img/contacts/red.png" class="status-icon2 error-icon" alt="Error">
-                        <img *ngIf="message.valid" src="assets/img/contacts/green.png" class="status-icon2 success-icon" alt="Success">
+                        <img *ngIf="!message.valid && message.touched" src="assets/img/contacts/red.png"
+                            class="status-icon2 error-icon" alt="Error">
+                        <img *ngIf="message.valid" src="assets/img/contacts/green.png" class="status-icon2 success-icon"
+                            alt="Success">
                     </div>
                     <br>
                     <label for="checkbox" class="check">
@@ -66,9 +72,95 @@
                     </div>
                     <br>
                     <div class="btn-centered">
-                        <button class="btn-primary" type="submit"
-                            [ngClass]="{'btn-disabled': !contactForm.valid}" [disabled]="!contactForm.valid">
+                        <button class="btn-primary" type="submit" [ngClass]="{'btn-disabled': !contactForm.valid}"
+                            [disabled]="!contactForm.valid">
                             Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="shade6">
+        <img src="assets/img/shades/55. Purple shadow footer V2.svg" alt="">
+    </div>
+    <div class="to-top" (click)="scrollToTop()">
+        <img class="hover-image" src="assets/img/contacts/arrow.svg" alt="">
+    </div>
+</section> -->
+
+<section id="contact" class="scroll-offset2">
+    <div class="headline">
+        <hr class="hr-invisible" />
+        <h1>{{ ContactText.contact }}</h1>
+        <hr />
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-paragraph">
+            <h2 [innerHTML]="ContactText.lookingFor"></h2>
+            <p [innerHTML]="ContactText.feelFree"></p>
+        </div>
+
+        <div class="contact-form">
+            <div class="container">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+                    <label for="name">{{ ContactText.namePlaceholder }}</label>
+                    <div class="input-container">
+                        <input class="bg-color" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name"
+                            name="name" placeholder="{{ ContactText.namePlaceholder }}" required
+                            [ngClass]="{'error-border': !name.valid && name.touched && !name.disabled}">
+                        <img *ngIf="!name.valid && name.touched" src="assets/img/contacts/red.png"
+                            class="status-icon error-icon" alt="Error">
+                        <img *ngIf="name.valid" src="assets/img/contacts/green.png" class="status-icon success-icon"
+                            alt="Success">
+                        <br *ngIf="!name.valid && name.touched && !name.disabled">
+                        <span *ngIf="!name.valid && name.touched && !name.disabled" class="warn-message">{{ ContactText.nameError }}</span>
+                    </div>
+
+                    <label for="email">{{ ContactText.emailPlaceholder }}</label>
+                    <div class="input-container">
+                        <input class="bg-color" #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email"
+                            name="email" placeholder="{{ ContactText.emailPlaceholder }}" required
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                            [ngClass]="{'error-border': !email.valid && email.touched && !email.disabled}">
+                        <img *ngIf="!email.valid && email.touched" src="assets/img/contacts/red.png"
+                            class="status-icon error-icon" alt="Error">
+                        <img *ngIf="email.valid" src="assets/img/contacts/green.png" class="status-icon success-icon"
+                            alt="Success">
+                        <br *ngIf="!email.valid && email.touched && !email.disabled">
+                        <span *ngIf="!email.valid && email.touched && !email.disabled" class="warn-message">{{ ContactText.emailError }}</span>
+                    </div>
+
+                    <label for="message">{{ ContactText.messagePlaceholder }}</label>
+                    <div class="textarea-container">
+                        <textarea class="bg-color" #message="ngModel" [(ngModel)]="contactData.message" id="message"
+                            name="message" placeholder="{{ ContactText.messagePlaceholder }}" style="height:200px" required
+                            [ngClass]="{'error-border': !message.valid && message.touched}"></textarea>
+                        <img *ngIf="!message.valid && message.touched" src="assets/img/contacts/red.png"
+                            class="status-icon2 error-icon" alt="Error">
+                        <img *ngIf="message.valid" src="assets/img/contacts/green.png" class="status-icon2 success-icon"
+                            alt="Success">
+                        <br *ngIf="!message.valid && message.touched">
+                        <span *ngIf="!message.valid && message.touched" class="warn-message">{{ ContactText.messageError }}</span>
+                    </div>
+                    <br>
+                    <label for="checkbox" class="check">
+                        <input type="checkbox" id="checkbox" [(ngModel)]="contactData.checkbox" name="checkbox"
+                            required>
+                        <span class="checkmark"></span>
+                        <p [innerHTML]="ContactText.privacyPolicy"></p>
+                    </label>
+                    <br>
+                    <div *ngIf="successMessage" class="success-message green">
+                        {{ successMessage }}
+                    </div>
+                    <br>
+                    <div class="btn-centered">
+                        <button class="btn-primary" type="submit" [ngClass]="{'btn-disabled': !contactForm.valid}"
+                            [disabled]="!contactForm.valid">
+                            {{ ContactText.send }}
                         </button>
                     </div>
                 </form>

@@ -11,12 +11,17 @@ import { TranslationService } from '../../translation.service';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
+[x: string]: any;
   isMenuActive = false;
 
   constructor(private translationService: TranslationService) {}
 
   setLanguage(language: 'en' | 'de') {
     this.translationService.setLanguage(language);
+  }
+
+  get NavBarText() {
+    return this.translationService.currentNavBarText;
   }
 
   @ViewChild('aboutMe') aboutMeRef!: ElementRef;
