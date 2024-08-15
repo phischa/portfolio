@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../translation.service';
 
@@ -10,6 +10,8 @@ import { TranslationService } from '../../translation.service';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+  isVisible = false;
+
   skills = [
     { src: 'assets/img/skills/html.svg', text: 'HTML' },
     { src: 'assets/img/skills/css.svg', text: 'CSS' },
@@ -24,7 +26,7 @@ export class SkillsComponent {
     { src: 'assets/img/skills/continually-learning2.svg', text: 'Continually Learning', color: true }
   ];
 
-  constructor(public translationService: TranslationService) {}
+  constructor(public translationService: TranslationService) { }
 
   changeLanguage(language: 'en' | 'de') {
     this.translationService.setLanguage(language);
@@ -32,5 +34,21 @@ export class SkillsComponent {
 
   get skillText() {
     return this.translationService.currentSkillText;
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const elements = document.querySelectorAll('.fade-in');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight) {
+        setTimeout(() => {
+          this.isVisible = true;
+        }, 500);
+      }
+    });
   }
 }

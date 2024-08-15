@@ -4,7 +4,7 @@
 <section id="skills" class="scroll-offset">
     <img class="shade3" src="assets/img/shades/31. Green shadow Skills Portfolio.svg" alt="">
     <div class="skills">
-        <div class="skills-img">
+        <div class="skills-img fade-in" [ngClass]="{'visible': isVisible}">
             <div *ngFor="let skill of skills" class="skill-item">
                 <img [src]="skill.src" [alt]="skill.text" [class.color]="skill.color">
                 <p [class.color]="skill.color">{{ skill.text }}</p>
