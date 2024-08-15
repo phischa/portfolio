@@ -112,7 +112,7 @@
                             name="name" placeholder="{{ ContactText.namePlaceholder }}" required
                             [ngClass]="{'error-border': !name.valid && name.touched && !name.disabled}">
                         <img *ngIf="!name.valid && name.touched" src="assets/img/contacts/red.png"
-                            class="status-icon error-icon" alt="Error">
+                            class="status-icon2 error-icon" alt="Error">
                         <img *ngIf="name.valid" src="assets/img/contacts/green.png" class="status-icon success-icon"
                             alt="Success">
                         <br *ngIf="!name.valid && name.touched && !name.disabled">
@@ -126,7 +126,7 @@
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                             [ngClass]="{'error-border': !email.valid && email.touched && !email.disabled}">
                         <img *ngIf="!email.valid && email.touched" src="assets/img/contacts/red.png"
-                            class="status-icon error-icon" alt="Error">
+                            class="status-icon2 error-icon" alt="Error">
                         <img *ngIf="email.valid" src="assets/img/contacts/green.png" class="status-icon success-icon"
                             alt="Success">
                         <br *ngIf="!email.valid && email.touched && !email.disabled">
@@ -139,8 +139,8 @@
                             name="message" placeholder="{{ ContactText.messagePlaceholder }}" style="height:200px" required
                             [ngClass]="{'error-border': !message.valid && message.touched}"></textarea>
                         <img *ngIf="!message.valid && message.touched" src="assets/img/contacts/red.png"
-                            class="status-icon2 error-icon" alt="Error">
-                        <img *ngIf="message.valid" src="assets/img/contacts/green.png" class="status-icon2 success-icon"
+                            class="status-icon3 error-icon" alt="Error">
+                        <img *ngIf="message.valid" src="assets/img/contacts/green.png" class="status-icon3 success-icon"
                             alt="Success">
                         <br *ngIf="!message.valid && message.touched">
                         <span *ngIf="!message.valid && message.touched" class="warn-message">{{ ContactText.messageError }}</span>

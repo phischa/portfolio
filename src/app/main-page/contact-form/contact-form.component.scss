@@ -77,7 +77,7 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     resize: vertical;
     color: white;
 
@@ -141,7 +141,16 @@ input:-webkit-autofill:focus {
 .status-icon2 {
     position: absolute;
     right: 10px;
-    top: 13%;
+    top: 31%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.status-icon3 {
+    position: absolute;
+    right: 10px;
+    top: 11%;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
