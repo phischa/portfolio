@@ -184,7 +184,7 @@ hr {
 
 .fade-in {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -196,6 +196,16 @@ hr {
 @media (min-width: 1920px) {
     .shade4 {
         left: 40px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .project-left {
+        justify-content: flex-start;
+    }
+
+    .project-right {
+        justify-content: flex-end;
     }
 }
 
