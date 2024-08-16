@@ -112,6 +112,7 @@ section {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 42px;
 
     hr {
@@ -149,6 +150,7 @@ section {
     bottom: 64px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 8px;
     rotate: 90deg;
 

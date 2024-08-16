@@ -43,8 +43,8 @@ export class TranslationService {
             title: 'Ich bin',
             name: 'Philip Schaper',
             role: 'FRONTEND-ENTWICKLER',
-            getInTouch: 'Get in touch',
-            scrollDown: 'Scroll down'
+            getInTouch: 'Kontakt',
+            scrollDown: 'Runter scrollen'
         }
     };
 
@@ -56,6 +56,8 @@ export class TranslationService {
             landscape of web development`,
             h2: `Looking for <span class="purple">another skill</span>?`,
             contentTwo: `Feel free to contact me. I'm looking forward to expand my current knowledge.`,
+            getInTouch: 'Get in touch',
+            continually:'Continually Learning'
         },
         de: {
             contentOne: `Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe 
@@ -64,6 +66,8 @@ export class TranslationService {
             Webentwicklung up to date zu bleiben.`,
             h2: `Suchen Sie nach <span class="purple">einem anderen Skill</span>?`,
             contentTwo: `Kontaktieren Sie mich gerne. Ich freue mich darauf meine Fähigkeiten auszuweiten.`,
+            getInTouch: 'Kontakt',
+            continually: 'Kontinuierliches Lernen'
         }
     }
 
@@ -292,6 +296,10 @@ export class TranslationService {
 
     get currentSkillText() {
         return this.skillTranslations[this.currentLanguage];
+    }
+
+    get currentContinuallyLearningText() {
+        return this.skillTranslations[this.currentLanguage].continually;
     }
 
     get currentPortfolioText() {
