@@ -40,7 +40,7 @@ export class SkillsComponent {
   onWindowScroll() {
     const elements = document.querySelectorAll('.fade-in');
     const windowHeight = window.innerHeight;
-    let offset = 200;
+    let offset = 100;
 
     elements.forEach(element => {
       const elementTop = element.getBoundingClientRect().top;
