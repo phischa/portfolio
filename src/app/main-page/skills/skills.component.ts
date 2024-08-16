@@ -40,11 +40,12 @@ export class SkillsComponent {
   onWindowScroll() {
     const elements = document.querySelectorAll('.fade-in');
     const windowHeight = window.innerHeight;
+    let offset = 200;
 
     elements.forEach(element => {
       const elementTop = element.getBoundingClientRect().top;
 
-      if (elementTop < windowHeight) {
+      if (elementTop < windowHeight - offset) {
         setTimeout(() => {
           this.isVisible = true;
         }, 500);

@@ -10,30 +10,46 @@ import { TranslationService } from '../../translation.service';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
-  isVisible: boolean[] = [false, false, false];
-
-  constructor(public translationService: TranslationService) {}
-
+  isVisibleOne = false;
+  isVisibleTwo: boolean[] = [false, false];
+  
+  constructor(public translationService: TranslationService) { }
+  
   changeLanguage(language: 'en' | 'de') {
     this.translationService.setLanguage(language);
   }
-
+  
   get portfolioText() {
     return this.translationService.currentPortfolioText;
   }
-
+  
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const elements = document.querySelectorAll('.fade-in');
     const windowHeight = window.innerHeight;
-
+  
+    // Offset für das erste Element
+    const offsetOne = 1050; 
+    // Offset für die anderen Elemente
+    const offsetTwo = 450; 
+  
     elements.forEach((element, index) => {
       const elementTop = element.getBoundingClientRect().top;
-      if (elementTop < windowHeight) {
+  
+      // Sichtbarkeit für das erste Element
+      if (index === 0 && elementTop < windowHeight - offsetOne) {
         setTimeout(() => {
-          this.isVisible[index] = true; 
-        }, 750);
+          this.isVisibleOne = true;
+        }, 500);
+      }
+  
+      // Sichtbarkeit für die anderen Elemente
+      if (index > 0 && elementTop < windowHeight - offsetTwo) {
+        setTimeout(() => {
+          this.isVisibleTwo[index - 1] = true; // index - 1, da isVisibleTwo bei 0 beginnt
+        }, 500);
       }
     });
   }
+  
 }
