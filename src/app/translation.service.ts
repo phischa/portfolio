@@ -22,13 +22,15 @@ export class TranslationService {
         },
         de: {
             title: 'Über mich',
-            content: `Hallo, mein Name ist Philip und ich bin ein Frontend-Entwickler aus Berlin.<br>
-            Mein Fokus liegt auf Angular, JavaScript und objektorientierter Programmierung. Diese Fähigkeiten habe ich mir durch viele Projekterfahrungen,
-            sowohl alleine als auch in Teams, angeeignet. Werfen Sie einen Blick auf mein Portfolio weiter unten,
-            um sich selbst davon zu überzeugen.<br><br>
-            Ich bin leidenschaftlicher Webentwickler, weil ich die einzigartige Mischung aus logischem Denken und Kreativität mag, die der Job erfordert.<br><br>
-            Meine Erfahrungen als Entwickler habe ich durch ein hohes Maß an Lernbereitschaft und selbstständigem Arbeiten erreicht.
-            Diese Fähigkeiten werden mich bei meiner zukünftigen Tätigkeit als Frontend-Entwickler unterstützen und ich freue mich darauf, in Ihrem Team mitzuarbeiten.`
+            content: `Hallo, mein Name ist Philip, und ich bin ein Frontend-Entwickler aus Berlin.<br>
+            Mein Fokus liegt auf JavaScript, Angular und objektorientierter Programmierung. Diese Fähigkeiten habe ich mir in intensiver Arbeit,
+            sowohl in erfolgreichen Einzel- als auch Teamprojekten, angeeignet 
+            Werfen Sie gerne einen Blick auf mein Portfolio weiter unten, um sich selbst davon zu überzeugen.<br><br>
+            Ich bin leidenschaftlicher Webentwickler, weil mich die einzigartige Mischung aus logischem Denken und Kreativität begeistert,
+            die der Job erfordert.<br><br>
+            Meine Kenntnisse als Entwickler habe ich durch ein hohes Maß an Lernbereitschaft und selbstständigem Arbeiten erreicht.
+            Diese Fähigkeiten werden meinen stetigen Wissenaufbau auch in meiner zukünftigen Tätigkeit voranbringen und ich freue mich darauf,
+            in Ihrem Team mitzuarbeiten.`
         }
     };
 
