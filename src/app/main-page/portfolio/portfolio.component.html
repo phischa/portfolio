@@ -17,7 +17,7 @@
         </div>
         <div class="text-left">
             <h1 class="purple">Join</h1>
-            <h2 class="green">Angular | TypeScript | HTML | CSS</h2>
+            <h2 class="green">JavaScript | HTML | CSS</h2>
             <p>{{ portfolioText.join }}</p>
             <div class="buttons">
                 <a href="https://join.philip-schaper.de/" target="_blank" class="btn-ref">
@@ -47,13 +47,28 @@
             <img src="assets/img/portfolio/polloloco.svg" alt="">
         </div>
     </div>
-    <div class="project-left margin-10 padding-bottom fade-in" [ngClass]="{'visible': isVisibleTwo[1]}">
-        <img src="assets/img/portfolio/pokedex.png" alt="">
+    <div class="project-left margin-10 fade-in" [ngClass]="{'visible': isVisibleTwo[1]}">
+        <img src="assets/img/portfolio/crm.png" alt="">
         <div class="text-left">
+            <h1 class="purple">simple CRM</h1>
+            <h2 class="green">Angular | TypeScript | Firebase | HTML | SCSS</h2>
+            <p>{{ portfolioText.crm }}</p>
+            <div class="buttons">
+                <a href="https://crm.philip-schaper.de/" target="_blank" class="btn-ref">
+                    <button class="btn-secondary">{{ portfolioText.liveTest }}</button>
+                </a>
+                <a href="https://github.com/phischa/simple-CRM" target="_blank" class="btn-ref">
+                    <button class="btn-tertiary">Github</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="project-right margin-10 padding-bottom fade-in" [ngClass]="{'visible': isVisibleTwo[1]}">
+        <div class="text-right">
             <h1 class="purple">Pokédex</h1>
             <h2 class="green">JavaScript | HTML | CSS | API</h2>
             <p>{{ portfolioText.pokedex }}</p>
-            <div class="buttons">
+            <div class="buttons2">
                 <a href="https://pokedex.philip-schaper.de/" target="_blank" class="btn-ref">
                     <button class="btn-secondary">{{ portfolioText.liveTest }}</button>
                 </a>
@@ -61,6 +76,9 @@
                     <button class="btn-tertiary">Github</button>
                 </a>
             </div>
+        </div>
+        <div>
+            <img src="assets/img/portfolio/pokedex.png" alt="">
         </div>
     </div>
 </section>

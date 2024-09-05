@@ -80,6 +80,8 @@ export class TranslationService {
             assign users and categories.`,
             polloLoco: `Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco
             salsa to fight against the crazy hen.`,
+            crm: `Easy tool for customer relationship menagement. It stores customer data in the firebase backend.
+            You can add new customers and edit their data`,
             pokedex: `This pokédex is based on the PokéAPI, a simple library that provides and catalogues pokemon information.`,
             liveTest: `Live test`
         },
@@ -88,6 +90,8 @@ export class TranslationService {
             von Drag-and-Drop-Funktionen und weisen Sie Benutzer und Kategorien zu.`,
             polloLoco: `Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, 
             Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.`,
+            crm: `Einfaches Customer Relationship Menagement Tool. Es speichert Kundendaten im Firebase Backend.
+            Sie können neue Kunden hinzufügen und die Daten bearbeiten.`,
             pokedex: `Dieser Pokédex basiert auf der PokéAPI, einer einfachen Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.`,
             liveTest: `Live Test`
         }
