@@ -48,7 +48,7 @@ export class SkillsComponent {
       if (elementTop < windowHeight - offset) {
         setTimeout(() => {
           this.isVisible = true;
-        }, 500);
+        }, 400);
       }
     });
   }

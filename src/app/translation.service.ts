@@ -16,20 +16,20 @@ export class TranslationService {
                 down to see for yourself.<br><br>
                 I am passionate about web development because I like the unique mix of logical thinking and creativity that the
                 job requires.<br><br>
-                My achievements as a developer were driven by my high level of willingness to learn and independent work.<br>
-                These skills will support my continuous knowledge building in my upcoming role as a frontend developer
+                My achievements as a developer were driven by my high level of independent work and willingness to evolve.<br>
+                These skills will support the continuous knowledge building in my upcoming role as a frontend developer,
                 and I am looking forward to joining your team.`
         },
         de: {
             title: 'Über mich',
-            content: `Hallo, mein Name ist Philip, und ich bin ein Frontend-Entwickler aus Berlin.<br>
-            Mein Fokus liegt auf JavaScript, Angular und objektorientierter Programmierung. Diese Fähigkeiten habe ich mir in intensiver Arbeit,
-            sowohl in erfolgreichen Einzel- als auch Teamprojekten, angeeignet 
+            content: `Hallo, mein Name ist Philip und ich bin ein Frontend-Entwickler aus Berlin.<br>
+            Mein Fokus liegt auf JavaScript, Angular und objektorientierter Programmierung. Diese Fähigkeiten habe ich mir in intensiver Arbeit angeeignet,
+            sowohl in erfolgreichen Einzel- als auch Teamprojekten. 
             Werfen Sie gerne einen Blick auf mein Portfolio weiter unten, um sich selbst davon zu überzeugen.<br><br>
             Ich bin leidenschaftlicher Webentwickler, weil mich die einzigartige Mischung aus logischem Denken und Kreativität begeistert,
             die der Job erfordert.<br><br>
-            Meine Kenntnisse als Entwickler habe ich durch ein hohes Maß an Lernbereitschaft und selbstständigem Arbeiten erreicht.
-            Diese Fähigkeiten werden meinen stetigen Wissenaufbau auch in meiner zukünftigen Tätigkeit voranbringen und ich freue mich darauf,
+            Meine Kenntnisse als Entwickler habe ich durch ein hohes Maß an Lernbereitschaft und selbstständiger Arbeit erreicht.
+            Diese Fähigkeiten werden den stetigen Wissensaufbau auch in meiner zukünftigen Tätigkeit voranbringen und ich freue mich darauf,
             in Ihrem Team mitzuarbeiten.`
         }
     };
@@ -54,9 +54,9 @@ export class TranslationService {
     private skillTranslations = {
         en: {
             contentOne: `My journey involved working on diverse projects, employing a range of
-            frontend technologies and concepts. I am open to embracing new frameworks, technologies
-            and methodologies to continously enhance my skills and stay ahead in the ever-evolving
-            landscape of web development`,
+            frontend technologies and concepts. I am open to embracing new frameworks, technologies,
+            and methodologies to continuously enhance my skills and stay ahead in the ever-evolving
+            landscape of web development.`,
             h2: `Looking for <span class="purple">another skill</span>?`,
             contentTwo: `Feel free to contact me. I'm looking forward to expand my current knowledge.`,
             getInTouch: 'Get in touch',
@@ -64,7 +64,7 @@ export class TranslationService {
         },
         de: {
             contentOne: `Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe 
-            von Frontend-Technologien und Konzepten eingesetzt. Ich bin offen für neue Frameworks, Technologien 
+            von Frontend Technologien und Konzepten eingesetzt. Ich bin offen für neue Frameworks, Technologien 
             und Methoden, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden 
             Webentwicklung up to date zu bleiben.`,
             h2: `Suchen Sie nach <span class="purple">einem anderen Skill</span>?`,
@@ -78,10 +78,10 @@ export class TranslationService {
         en: {
             join: `Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
             assign users and categories.`,
-            polloLoco: `Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco
+            polloLoco: `Jump, run and throw game based on an object-oriented approach. Help Pepe to find coins and tabasco
             salsa to fight against the crazy hen.`,
-            crm: `Easy tool for customer relationship menagement. It stores customer data in the firebase backend.
-            You can add new customers and edit their data`,
+            crm: `Easy tool for customer relationship management. It stores customer data in the firebase backend.
+            You can add new customers and edit their data.`,
             pokedex: `This pokédex is based on the PokéAPI, a simple library that provides and catalogues pokemon information.`,
             liveTest: `Live test`
         },
@@ -90,7 +90,7 @@ export class TranslationService {
             von Drag-and-Drop-Funktionen und weisen Sie Benutzer und Kategorien zu.`,
             polloLoco: `Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, 
             Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.`,
-            crm: `Einfaches Customer Relationship Menagement Tool. Es speichert Kundendaten im Firebase Backend.
+            crm: `Einfaches Customer Relationship Management Tool. Es speichert Kundendaten im Firebase Backend.
             Sie können neue Kunden hinzufügen und die Daten bearbeiten.`,
             pokedex: `Dieser Pokédex basiert auf der PokéAPI, einer einfachen Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.`,
             liveTest: `Live Test`
@@ -158,7 +158,7 @@ export class TranslationService {
                 <h2>Contact:</h2>
                 <p>Email: ps.dev(a)mailbox.org</p><br>
                 <h2>Notes on the Website / Copyright Notices:</h2>
-                <p>All images used were created by myself, provided by the Developer Academy, or are<br>
+                <p>All images used were created by myself, provided by the Developer Academy or are
                 subject to free use under the Pixabay content license.</p>
                 <h2>Responsible for editorial content:</h2>
                 <p>Philip Schaper</p>
@@ -176,7 +176,7 @@ export class TranslationService {
                 <h2>Kontakt:</h2>
                 <p>E-Mail: ps.dev(a)mailbox.org</p><br>
                 <h2>Hinweise zur Website / Urheberrechtliche Hinweise:</h2>
-                <p>Alle verwendeten Bilder wurden von mir selbst erstellt, wurden von der Developer Akademie zur Verfügung<br>
+                <p>Alle verwendeten Bilder wurden von mir selbst erstellt, wurden von der Developer Akademie zur Verfügung
                 gestellt oder unterliegen der kostenlosen Nutzung unter der Pixabay-Inhaltslizenz.</p>
                 <h2>Verantwortlich für redaktionelle Inhalte:</h2>
                 <p>Philip Schaper</p>

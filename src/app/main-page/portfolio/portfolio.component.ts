@@ -40,14 +40,14 @@ export class PortfolioComponent {
       if (index === 0 && elementTop < windowHeight - offsetOne) {
         setTimeout(() => {
           this.isVisibleOne = true;
-        }, 500);
+        }, 400);
       }
   
       // Sichtbarkeit für die anderen Elemente
       if (index > 0 && elementTop < windowHeight - offsetTwo) {
         setTimeout(() => {
           this.isVisibleTwo[index - 1] = true; // index - 1, da isVisibleTwo bei 0 beginnt
-        }, 500);
+        }, 400);
       }
     });
   }
