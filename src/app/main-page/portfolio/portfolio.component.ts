@@ -47,7 +47,7 @@ export class PortfolioComponent {
       if (index > 0 && elementTop < windowHeight - offsetTwo) {
         setTimeout(() => {
           this.isVisibleTwo[index - 1] = true; // index - 1, da isVisibleTwo bei 0 beginnt
-        }, 400);
+        }, 600);
       }
     });
   }

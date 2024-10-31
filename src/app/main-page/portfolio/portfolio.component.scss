@@ -7,6 +7,11 @@ section {
     overflow: hidden;
 }
 
+.btn-disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
 .headline {
     position: relative;
     right: 0;

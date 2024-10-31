@@ -83,6 +83,7 @@ export class TranslationService {
             crm: `Easy tool for customer relationship management. It stores customer data in the firebase backend.
             You can add new customers and edit their data.`,
             pokedex: `This pokédex is based on the PokéAPI, a simple library that provides and catalogues pokemon information.`,
+            daBubble: `A Slack clone app that facilitates smooth team communication and collaboration through messaging, file sharing, and customizable channels to enhance workplace.`,
             liveTest: `Live test`
         },
         de: {
@@ -93,6 +94,7 @@ export class TranslationService {
             crm: `Einfaches Customer Relationship Management Tool. Es speichert Kundendaten im Firebase Backend.
             Sie können neue Kunden hinzufügen und die Daten bearbeiten.`,
             pokedex: `Dieser Pokédex basiert auf der PokéAPI, einer einfachen Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.`,
+            daBubble:`Eine Slack-Klon-App, die eine reibungslose Teamkommunikation und -zusammenarbeit durch Messaging, Dateifreigabe und anpassbare Kanäle zur Verbesserung des Arbeitsplatzes ermöglicht.`,
             liveTest: `Live Test`
         }
     }
