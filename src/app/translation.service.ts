@@ -158,7 +158,7 @@ export class TranslationService {
                 <h2>Address:</h2>
                 <p>Rutnikstraße 38<br>Lichtenberg<br>10367 Berlin</p><br>
                 <h2>Contact:</h2>
-                <p>Email: ps.dev(a)mailbox.org</p><br>
+                <p>Email: mail(a)philip-schaper.de</p><br>
                 <h2>Notes on the Website / Copyright Notices:</h2>
                 <p>All images used were created by myself, provided by the Developer Academy or are
                 subject to free use under the Pixabay content license.</p>
@@ -176,7 +176,7 @@ export class TranslationService {
                 <h2>Postanschrift:</h2>
                 <p>Rutnikstraße 38<br>Lichtenberg<br>10367 Berlin</p><br>
                 <h2>Kontakt:</h2>
-                <p>E-Mail: ps.dev(a)mailbox.org</p><br>
+                <p>E-Mail: mail(a)philip-schaper.de</p><br>
                 <h2>Hinweise zur Website / Urheberrechtliche Hinweise:</h2>
                 <p>Alle verwendeten Bilder wurden von mir selbst erstellt, wurden von der Developer Akademie zur Verfügung
                 gestellt oder unterliegen der kostenlosen Nutzung unter der Pixabay-Inhaltslizenz.</p>
@@ -195,7 +195,7 @@ export class TranslationService {
                     <p>As of: August 9, 2024</p>
                     <h2 id="m3">Responsible</h2>
                     <p>Philip Schaper</p>
-                    <p>Email address: <a href="mailto:ps.dev@mailbox.org">ps.dev (a) mailbox.org</a></p>
+                    <p>Email address: <a href="mailto:mail@philip-schaper.de">mail (a) philip-schaper.de</a></p>
                     <p>Imprint: philip.schaper.de/imprint</p>
                 </div>
                 <h2 id="mOverview">Overview of Processing</h2>
@@ -246,7 +246,7 @@ export class TranslationService {
                     <p>Stand: 9. August 2024</p>
                     <h2 id="m3">Verantwortlicher</h2>
                     <p>Philip Schaper</p>
-                    <p>E-Mail-Adresse: <a href="mailto:ps.dev@mailbox.org">ps.dev (a) mailbox.org</a></p>
+                    <p>E-Mail-Adresse: <a href="mailto:mail@philip-schaper.de">mail (a) philip-schaper.de</a></p>
                     <p>Impressum: philip.schaper.de/imprint</p>
                 </div>
                 <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
