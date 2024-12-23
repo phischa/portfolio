@@ -179,7 +179,7 @@ export class TranslationService {
                 <p>E-Mail: mail(a)philip-schaper.de</p><br>
                 <h2>Hinweise zur Website / Urheberrechtliche Hinweise:</h2>
                 <p>Alle verwendeten Bilder wurden von mir selbst erstellt, wurden von der Developer Akademie zur Verfügung
-                gestellt oder unterliegen der kostenlosen Nutzung unter der Pixabay-Inhaltslizenz.</p>
+                gestellt oder unterliegen der <br> kostenlosen Nutzung unter der Pixabay-Inhaltslizenz.</p>
                 <h2>Verantwortlich für redaktionelle Inhalte:</h2>
                 <p>Philip Schaper</p>
                 <p>Dieses Impressum wurde mit Hilfe des Impressums-Generators der activeMind AG erstellt (Version 2024-07-05).</p>
